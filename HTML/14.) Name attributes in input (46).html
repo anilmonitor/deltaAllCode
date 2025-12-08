@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name attributes in input tag</title>
+</head>
+
+<body>
+
+    <form action="/action">
+        <div>
+            <label for="username">Enter your username:</label>
+            <input type="text" placeholder="your username" id="username" name="user ka username">
+        </div>
+
+        <div>
+            <label for="password">Enter your password:</label>
+            <input type="password" placeholder="your password" id="password" name="username ka password">
+        </div>
+        <button>Submit</button>
+
+        <!-- Note:- hamlog agar form k andr jakar aur username k anadr = "anilmonitor" apana username dalenge aur password k andr = "Anil@12345" username ka password dalenge to (name="") attributes k maddat se hamara input tag ka information backend ko milta hai ki aakhir us input tag ke andar kya information hai. -->
+
+        <!--   http://127.0.0.1:5500/action?user+ka+username=anilmonitor&username+ka+password=Anil%4012345  -->
+
+    </form>
+
+
+
+
+    <!-- #2nd Example of YT  -->
+    <form action="https://www.youtube.com/results">
+        <div>
+            <label for="username">Enter your username:</label>
+            <input type="text" placeholder="search on youtube" id="username" name="search_query">
+        </div>
+        <button>Search</button>
+    </form>
+    <!-- if we will search apple on this form then we will get this   = https://www.youtube.com/results?search_query=apple -->
+
+    <form action="https://www.google.com/search">
+        <div>
+            <label for="username">Enter your username:</label>
+            <input type="text" placeholder="search on google" id="username" name="q">
+        </div>
+        <button>Search</button>
+    </form>
+
+
+</body>
+
+</html>

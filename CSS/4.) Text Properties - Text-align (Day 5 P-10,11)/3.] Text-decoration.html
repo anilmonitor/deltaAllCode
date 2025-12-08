@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concept of text-decoration</title>
+
+    <style>
+        #line_through {
+            text-decoration: line-through red dashed;
+        }
+
+        #overline {
+            text-decoration: overline green double;
+        }
+
+        #underline {
+            text-decoration: underline overline line-through;
+            text-decoration-color: red;
+            text-decoration-thickness: 0.5%;
+        }
+
+
+/* two way to use styling in text decoration */
+        #firstway {
+            text-decoration-style: double;
+            text-decoration-line: underline overline ;
+            text-decoration-color: rgb(255, 0, 208);
+            text-decoration-thickness: 1px;
+        }
+
+        #secondway {
+            text-decoration: double underline overline rgb(255, 0, 208) 5px;
+        }
+
+        /* anchor tag underline remove */
+        a{
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- concept of text-decoration -->
+    <h1 id="underline">This is underline text-decoration</h1>
+    <h1 id="overline">This is overline text-decoration</h1>
+    <h1 id="line_through">This is Ligh-through text-decorattion</h1>
+    <br><br><br>
+
+    <h1 id="firstway"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam</h1>
+
+    <br><br><br>
+    <h1 id="secondway"> Lorem ipsum, dolor sit amet consectetur &nbsp; adipisicing elit. Laboriosam</h1>
+
+
+    <!-- Removing <a href=""></a> underline using text-decoration -->
+    <a href="https://youtube.com" target="_blank">Open YouTube in Your Phone</a>
+</body>
+
+</html>

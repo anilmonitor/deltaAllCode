@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in html and input type attributes</title>
+</head>
+
+<body>
+
+    <!-- Form tag is used to create a form in webpage. -->
+    <!-- Type attributes is used to choose type of input in form -->
+
+    <Form action="https://youtube.com/anilmonitor" target="_blank">
+        Text
+        <input type="text" value="Anil kumar">
+        <br>
+        Password
+        <input type="password">
+        <br>
+        checkbox
+        <input type="checkbox">
+        <br>
+        number
+        <input type="number">
+        <br>
+        Radio
+        <input type="radio">
+        <br>
+        Time
+        <input type="time">
+        <br>
+        Week
+        <input type="week">
+        <br>
+        Email
+        <input type="email">
+        <br>
+        Color
+        <input type="color">
+        <br>
+        Range
+        <input type="range">
+        <br>
+        File
+        <input type="file">
+        <br>
+        Date
+        <input type="date">
+        <br>
+        Search
+        <input type="search">
+
+
+        <!-- More input type on mdn <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"></a> -->
+
+    </Form>
+
+    <!-- Using Placeholder attributes in Form -->
+
+    <form action="any">
+        <h3>Login Form</h3>
+        <input type="text" placeholder="username"> <br>
+        <input type="password" placeholder="Password">
+    </form>
+
+    <hr>
+
+    <!-- Using lable tag in html form -->
+
+    <form action="anyaction">
+
+        <label>
+            username
+            <input type="text" placeholder="username">
+        </label>
+
+        <br>
+
+        <label>
+            Password
+            <input type="password" placeholder="Password">
+        </label>
+    </form>
+
+    <hr>
+
+    <!-- Making form using label classical approach  -->
+
+    <form action="11.) Table in html (38).html">
+        <div>
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" placeholder="username">
+        </div>
+
+        <div>
+            <label for="password">Enter your password</label>
+            <input type="password" placeholder="password" id="password">
+        </div>
+
+        <div>
+            <label for="age">Enter Your age:</label>
+            <input type="number" id="age" placeholder="age">
+        </div>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+
+    <!-- button type attributes in html -->
+
+    <form action="/action">
+        <div>
+            <label for="usernameF">Your username:</label>
+            <input type="text" placeholder="username" id="usernameF">
+        </div>
+
+        <div>
+            <label for="passwordF">Your password:</label>
+            <input type="password" id="passwordF" placeholder="password">
+        </div>
+
+        <button type="submit">Submit page info.</button>
+        <button type="reset">Reset Form</button>
+        <button type="button">Simple button</button>
+        <button type="button"> <a href="https://youtube.com" target="_blank">YouTube</a></button>
+
+        <!-- We can also create a button/submit button using <input> tag -->
+
+        <input type="button">
+        <input type="button" value="I am a button">
+
+        <input type="submit">
+        <input type="submit" value="I am a Submit button">
+    </form>
+
+</body>
+</html>

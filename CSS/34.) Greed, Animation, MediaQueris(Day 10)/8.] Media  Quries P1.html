@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      .d1,
+      .min_width,
+      .max_width {
+        height: 100px;
+        width: 300px;
+        background-color: black;
+        color: wheat;
+        margin: 5px;
+      }
+
+      /* 1st method */
+      @media (width: 200px) {
+        .d1 {
+          background-color: red;
+          color: black;
+          font-size: 2rem;
+          border: 5px solid blue;
+        }
+      }
+
+      /* 2nd method min-width/max-width*/
+
+      @media (min-width: 500px) {
+        .min_width {
+          box-shadow: 3px 3px 7px blue;
+          border: 4px solid rgb(217, 0, 170);
+        }
+      }
+
+      @media (max-width: 450px) {
+        .max_width {
+          animation: shadow 1s 0s infinite normal;
+        }
+      }
+
+      @keyframes shadow {
+        0% {
+          border: 7px dotted #ff00d9;
+        }
+        50% {
+          border: 7px dotted #0004ff;
+        }
+        75% {
+          border: 7px dotted #108a00;
+        }
+        100% {
+          border: 7px dotted #ff2a00;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d1">When width is 200px</div>
+    <div class="min_width">Min-width:500px</div>
+    <div class="max_width">Max-width:450px</div>
+  </body>
+</html>

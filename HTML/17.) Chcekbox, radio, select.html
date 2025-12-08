@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox, radio, select, textarea</title>
+</head>
+
+<body>
+    <form action="server">
+        <input type="checkbox" id="checkbox" name="checkbox" checked>
+        <label for="checkbox">I am 18<sup>+</sup></label>
+
+        <!-- if we write checked  in input element then bydefault checkbox will be checked -->
+
+        <!-- Checkbox me name same rakhte h taki sabhi input and lable group rhe and we give value to send sever that is input box me kya store hai -->
+        <div>
+            <label for="Subject">Choose Your Subject: </label>
+
+            <input type="checkbox" id="maths" name="Subject" value="Maths">
+            <label for="maths">Maths</label>
+            <input type="checkbox" id="Science" name="Subject" value="Science">
+            <label for="Science">Science</label>
+            <input type="checkbox" id="Computer" name="Subject" value="Computer">
+            <label for="Computer">Computer</label>
+            <input type="checkbox" id="G.K" name="Subject" value="G.K">
+            <label for="G.K">G.K</label>
+            <input type="checkbox" id="English" name="Subject" value="English">
+            <label for="English">English</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+    <!-- Use of Radio input tag  -->
+    <h1>Feedback Form</h1>
+    <form action="server">
+
+        <label for="Rating"> Rate us our of 5: </label> <br>
+        <input type="radio" name="Rating" id="one" value="1">
+        <label for="one">1</label> <br>
+
+        <input type="radio" name="Rating" id="two" value="2">
+        <label for="two">2</label> <br>
+
+        <input type="radio" name="Rating" id="three" value="3">
+        <label for="three">3</label> <br>
+
+        <input type="radio" name="Rating" id="four" value="4">
+        <label for="four">4</label> <br>
+
+        <input type="radio" name="Rating" id="five" value="5">
+        <label for="five">5</label>
+
+        <button type="submit">Submit</button>
+
+        <!-- we give same name to group it and afterr giving same name koi ek hi radio button select hoga -->
+    </form>
+
+
+    <!-- Use of select element -->
+
+    <form action="sserver">
+        <label for="Fruits">Select your Favorite Fruits</label>
+        <select name="Fruits" id="Fruits">
+            <option>--Select Your Option--</option>
+            <option value="Apple">Apple</option>
+            <option value="Orange">Orange</option>
+            <option value="Lichi">Lichi</option>
+            <option value="Mango">Mango</option>
+            <option value="Banana">Banana</option>
+            <option value="Graps">Graps</option>
+            <option value="Jamun" selected>Jamun</option>
+
+            <!-- If we use selected attributes then Jamun hmesa se default select rhega  -->
+        </select>
+
+    </form>
+
+    <form action="server">
+        <!-- Range input tag -->
+        <div>
+            <label for="vol">Select Your range: </label>
+            <input type="range" id="vol" name="vol" min="0" max="100" step="10" value="40">
+        </div>
+
+        <!-- value means 40 pe set rhega by default and step means 10,10 k step me volume badhega. -->
+
+
+
+
+        <!-- textarea tag -->
+
+        <h1>Feedback Form</h1>
+        <label for="Feedback">Your Feedback: </label> <br>
+        <textarea id="Feedback" cols="30" rows="10" name="Feedback" placeholder="Write your feedback here"></textarea> 
+ <button>Submit</button>
+    </form>
+</body>
+
+</html>

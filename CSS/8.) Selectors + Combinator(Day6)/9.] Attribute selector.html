@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selector</title>
+    <style>
+        input[type="text"] {
+            color: #00fd0d;
+            background: #ff0;
+        }
+
+        input[type="password"],
+        input[type="tel"] {
+            color: red;
+            background: cyan;
+        }
+
+        input[name="text2"],
+        input[placeholder="username"] {
+            color: red;
+        }
+
+        input[id]{
+            color: darkred;
+            background: greenyellow;
+        }
+
+        input[name="last_Text"]{
+            background-color: red;
+            color: blue;
+            box-shadow:  0px 0px 20px 5px yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="your username">
+    <input type="password" placeholder="your password">
+    <input type="tel" placeholder="your number">
+    <hr>
+    <div>
+        <input type="email" name="text2"> <br> <br>
+        <input type="email" placeholder="username">
+    </div>
+
+
+    <input type="search" id="a" placeholder="this is search">
+    <input type="datetime" id="b">
+    <input type="date" id="c">
+
+    <input type="text" name="last_Text">
+</body>
+
+</html>

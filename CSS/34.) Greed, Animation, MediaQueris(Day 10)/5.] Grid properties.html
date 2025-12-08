@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Propeties</title>
+    <style>
+      .cont2 {
+        height: 300px;
+        width: 600px;
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 5px;
+      }
+
+      .item2 {
+        height: 50px;
+        width: 140px;
+        background-color: yellow;
+        border: 1px solid #f50000;
+        text-align: center;
+      }
+
+      /* Justify-item properties */
+      #justify_items_start {
+        justify-items: start;
+      }
+
+      #justify_items_end {
+        justify-items: end;
+      }
+
+      #justify_items_center {
+        justify-items: center;
+      }
+
+      /* align-item properties */
+      #align_items_start {
+        align-items: start;
+      }
+
+      #align_items_end {
+        align-items: end;
+      }
+
+      #align_items_center {
+        align-items: center;
+      }
+
+      /* justify-self and align-self use */
+      .self {
+        justify-self: center;
+        align-self: center;
+      }
+
+      /* shortcut to place grid item in center, end and start */
+     /* for container all grid-items */
+      #place {
+        place-items: center;
+      }
+
+      /* for single grid-item */
+      .place{
+        place-self: end;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- justify-items Grid Properties -->
+    <h3>justify-items: Start</h3>
+    <div class="cont2" id="justify_items_start">
+      <div class="item2 one">1</div>
+      <div class="item2">2</div>
+      <div class="item2">3</div>
+      <div class="item2">4</div>
+      <div class="item2">5</div>
+      <div class="item2">6</div>
+      <div class="item2">7</div>
+      <div class="item2">8</div>
+    </div>
+
+    <hr />
+    <h3>justify-items: end</h3>
+    <div class="cont2" id="justify_items_end">
+      <div class="item2 one">1</div>
+      <div class="item2">2</div>
+      <div class="item2">3</div>
+      <div class="item2">4</div>
+      <div class="item2">5</div>
+      <div class="item2">6</div>
+      <div class="item2">7</div>
+      <div class="item2">8</div>
+    </div>
+    <hr />
+    <h3>justify-items: center</h3>
+    <div class="cont2" id="justify_items_center">
+      <div class="item2 one">1</div>
+      <div class="item2">2</div>
+      <div class="item2">3</div>
+      <div class="item2">4</div>
+      <div class="item2">5</div>
+      <div class="item2">6</div>
+      <div class="item2">7</div>
+      <div class="item2">8</div>
+    </div>
+    <hr />
+
+    <!-- Align-items Grid Properties-->
+    <h3>Align-items: Start</h3>
+    <div class="cont2" id="align_items_start">
+      <div class="item2 one">1</div>
+      <div class="item2">2</div>
+      <div class="item2">3</div>
+      <div class="item2">4</div>
+      <div class="item2">5</div>
+      <div class="item2">6</div>
+      <div class="item2">7</div>
+      <div class="item2">8</div>
+    </div>
+    <hr />
+    <h3>Align-items: end</h3>
+    <div class="cont2" id="align_items_end">
+      <div class="item2 one">1</div>
+      <div class="item2">2</div>
+      <div class="item2">3</div>
+      <div class="item2">4</div>
+      <div class="item2">5</div>
+      <div class="item2">6</div>
+      <div class="item2">7</div>
+      <div class="item2">8</div>
+    </div>
+    <hr />
+    <h3>Align-items: center</h3>
+    <div class="cont2" id="align_items_center">
+      <div class="item2 one">1</div>
+      <div class="item2">2</div>
+      <div class="item2">3</div>
+      <div class="item2">4</div>
+      <div class="item2">5</div>
+      <div class="item2">6</div>
+      <div class="item2">7</div>
+      <div class="item2">8</div>
+    </div>
+
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+
+    <p>Justify-self and align-self is basically use for grid-item</p>
+    <h3>Justify-self</h3>
+    <h3>align-self</h3>
+    <div class="cont2">
+      <div class="item2">1</div>
+      <div class="item2 self">2</div>
+      <div class="item2">3</div>
+      <div class="item2">4</div>
+      <div class="item2">5</div>
+      <div class="item2">6</div>
+      <div class="item2">7</div>
+      <div class="item2">8</div>
+    </div>
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+
+    <!-- /* shortcut to place grid-items in center, end and start */ -->
+    <h3>place-item and place-self</h3>
+    <p>
+      Place-item is use to place all the grid item in (center,end,start) From
+      vertically and horizontally {This basically use for Grid-container}
+    </p>
+
+    <p>
+      Place-self is also use to place grid item is center but it apply only on
+      grid-item not on container
+    </p>
+
+    <div class="cont2" id="place">
+      <div class="item2">1</div>
+      <div class="item2 place">2</div>
+      <div class="item2">3</div>
+      <div class="item2">4</div>
+      <div class="item2">5</div>
+      <div class="item2">6</div>
+      <div class="item2">7</div>
+      <div class="item2">8</div>
+    </div>
+  </body>
+</html>

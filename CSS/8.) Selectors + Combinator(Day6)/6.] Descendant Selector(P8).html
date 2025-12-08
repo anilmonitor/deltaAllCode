@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector Concept</title>
+    <style>
+        nav ul li a,
+        .li {
+            color: hotpink;
+            text-decoration: none;
+        }
+
+        div p a {
+            color: rgb(252, 252, 252);
+            background: #1aff00;
+        }
+
+        div .follow {
+            color: aqua;
+            background: #000;
+        }
+
+        p button {
+            color: black;
+            background: yellow;
+        }
+
+        div form p select .option1 {
+            color: white;
+            background: #000;
+        }
+
+        div form p select .option2 {
+            color: rgb(0, 0, 0);
+            background: rgb(246, 255, 0);
+        }
+
+        div form p select .option3 {
+
+            background: orange;
+        }
+
+        div form p select .option4 {
+            background: white;
+        }
+
+        div form p select .option5 {
+            background: darkgreen;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="li"><a href="a.com">About us</a></li>
+            <li class="li"><a href="m.in">About my life</a></li>
+            <li class="li"><a href="j.com">Blog</a></li>
+            <li class="li"><a href="ll.in">tech</a></li>
+            <li class="li"><a href="k.com">Main menu</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <p class="follow">Anil kumar <a href="anil.in">Follow us</a></p>
+        <p class="follow">Rahul kumar <a href="rahul.in">Follow us</a></p>
+        <p class="follow">Neha kumar <a href="neha.in">Follow us</a></p>
+        <p class="follow">ipsum kumar <a href="ipsum.in">Follow us</a></p>
+        <p class="follow">Nitu kumar <a href="nitu.in">Follow us</a></p>
+    </div>
+
+    <div>
+        <p>
+            <button>Follow on instagram</button>
+            <button>Follow on whatsapp</button><br>
+            <button>Follow on youtube</button>
+            <button>Follow on Facebook</button>
+        </p>
+    </div>
+
+    <div>
+        <form>
+            <p>
+                <select>
+                    <option class="option1">Select an option</option>
+                    <option class="option1">Bike</option>
+                    <option class="option1">Train</option>
+                    <option class="option1">Boat</option>
+
+                    <option class="option2">Apple</option>
+                    <option class="option2">Orange</option>
+                    <option class="option2">Mango</option>
+                    <option class="option2">Ananas</option>
+                    <option class="option2">Bananas</option>
+
+                    <option class="option3"></option>
+                    <option class="option4"></option>
+                    <option class="option5"></option>
+                </select>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

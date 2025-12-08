@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Shorthand use</title>
+    <style>
+      .container {
+        display: flex;
+        height: 500px;
+        border: 3px solid red;
+      }
+
+      #cont1{
+        flex: 0 5 100px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box" id="cont1" style="background-color: aqua">box-1</div>
+      <div class="box" id="cont2" style="background-color: red">box-2</div>
+      <div class="box" id="cont3" style="background-color: darkblue">box-3</div>
+      <div class="box" id="cont4" style="background-color: yellow">box-4</div>
+    </div>
+  </body>
+</html>

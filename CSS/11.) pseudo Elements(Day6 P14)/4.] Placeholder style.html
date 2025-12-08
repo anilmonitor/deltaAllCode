@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylling of placeholder text in Input, textarea</title>
+    <style>
+        input::placeholder {
+            color: darkblue;
+        }
+
+       form textarea::placeholder {
+            color: cyan;
+            background-color: black;
+        }
+
+        textarea[class="A12"] {
+            color: rgb(231, 93, 2);
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- If we want to style the placeholder text in input tag and textarea tag then we can do that easily. -->
+
+    <form>
+        <input type="text" placeholder="name"> <br><br>
+        <input type="password" placeholder="password"><br><br>
+        <input type="email" placeholder="email"> <br><br>
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your feedback"></textarea>
+
+      
+    </form>
+    <textarea name="" id="" class="A12" cols="30" rows="10" placeholder="your feedback here"></textarea>
+</body>
+
+</html>

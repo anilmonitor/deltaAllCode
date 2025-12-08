@@ -1,0 +1,104 @@
+/* RGB concept */
+
+#red{
+color: rgb(255, 0, 0);
+}
+
+
+#green{
+color: rgb(0, 255, 0);
+}
+
+#blue{
+color: rgb(0, 0, 255);
+}
+
+#black {
+    color: rgba(0, 0, 0);
+}
+
+
+#random{
+    color: rgb(255, 0, 140)
+}
+
+
+/* <!-- Hex code Concept part 8 of Day5--> */
+.red {
+color: #ff0000;
+}
+
+.green {
+    color: #00ff00;
+}
+.blue{
+  color:   #0000ff;
+}
+
+
+/* taking comman in hexcode FFFFFF or 000000 = Comman - fff or fff*/
+#comman{
+    color: #ff0;
+    background: #f00;
+}
+
+p{
+color: #fff;
+background: #000;
+}
+
+
+
+/* Dark to light white hex color #AAA - most Dark white color and #FFF means light white color */
+#AAA{
+    color: #AAA;
+}
+
+#BBB{
+    color: #BBB;
+}
+
+#CCC{
+    color: #CCC;
+}
+
+#DDD{
+    color: #ddd;
+}
+
+#EEE{
+    color: #EEE;
+}
+
+#FFF{
+    color: #fff;
+}
+.BGC{
+    background: #000;
+}
+
+
+/* Dark to light Red hex color #A00 - most Dark red color and #F00 means light red color */
+#A00{
+    color: #A00;
+}
+
+#B00{
+    color: #B00;
+}
+
+#C00{
+    color: #C00;
+}
+
+#D00{
+    color: #D00;
+}
+
+#E00{
+    color: #E00;
+}
+
+#F00{
+    color: #F00;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checked Active pseudo class</title>
+    <style>
+      input[type="radio"]:checked + label {
+        color: yellow;
+        background: red;
+        font-weight: bolder;
+        font-size: larger;
+      }
+
+      input[type="checkbox"]:checked + label {
+        color: pink;
+        background: #000;
+      }
+
+      .last input:checked + label{
+        background-color: black;
+        color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Female</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="yt" />
+      <label for="yt">I have Yt Channel also.</label>
+    </div>
+
+    <div class="last">
+        <input type="radio" id="game" name="game">
+        <label for="game">This is BGMI</label>
+    </div>
+  </body>
+</html>

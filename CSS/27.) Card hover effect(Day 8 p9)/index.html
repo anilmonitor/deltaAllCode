@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card hover effects</title>
+    <style>
+      #outer {
+        margin: 15px;
+        width: 300px;
+        border: 2px solid rgba(0, 0, 0, 0.742);
+        border-radius: 8px;
+        box-shadow: 0.1px 4px 8px rgba(0, 0, 0, 0.52);
+        transition: 0.3s 0s transform;
+      }
+
+      #outer:hover {
+        box-shadow: 0px 0px 16px rgb(110, 119, 255);
+        transform: scale(1.03);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0px 0px;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.673);
+        border-bottom: 1px whitesmoke solid;
+      }
+
+      #inner {
+        line-height: 5px;
+        text-align: center;
+      }
+
+      /* Neha rahul */
+      #nr > div[id="outer"] {
+        display: inline-block;
+      }
+
+      /* Anil Ritu */
+      #ar > div[id="outer"] {
+        display: inline-block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section id="nr">
+      <div id="outer">
+        <img
+          src="https://images.unsplash.com/photo-1529672425113-d3035c7f4837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="girl2"
+        />
+
+        <div id="inner">
+          <h2>Neha</h2>
+          <p>Chhotta bachie</p>
+        </div>
+      </div>
+      <div id="outer">
+        <img
+          src="https://media.istockphoto.com/id/183798406/photo/drawing-lesson-mother-and-son-with-felt-pens-at-home.jpg?s=612x612&w=0&k=20&c=f2Aw5V-YC5Cz2P-Uhz7N7J8ee6h-0XARcAuXX8Xk9Bw="
+          alt="girl2"
+        />
+
+        <div id="inner">
+          <h2>Rahul</h2>
+          <p>Playing kid of 0 yrs</p>
+        </div>
+      </div>
+    </section>
+    <!-- 2nd -->
+    <section id="ar">
+      <div id="outer">
+        <img
+          src="https://media.istockphoto.com/id/1169549643/photo/little-girl-using-a-laptop.jpg?s=612x612&w=0&k=20&c=-rXUrVjJVieI33J4JCnm_GVo9-bJjubl0S7qbTrd4-Q="
+          alt="girl2"
+        />
+
+        <div id="inner">
+          <h2>Unkwo</h2>
+          <p>Higher level engineer</p>
+        </div>
+      </div>
+      <div id="outer">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoFRQjM-wM_nXMA03AGDXgJK3VeX7vtD3ctA&s"
+        />
+
+        <div id="inner">
+          <h2>Anil</h2>
+          <p>A playing bachu</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

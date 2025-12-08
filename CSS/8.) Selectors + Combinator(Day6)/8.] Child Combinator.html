@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child combinator</title>
+    <style>
+      div > nav {
+        color: chocolate;
+        background: cyan;
+      }
+
+      body > ul {
+        color: white;
+        background: brown;
+      }
+
+      body #last {
+        color: white;
+        background: brown;
+      }
+
+      .secc > p {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li>Anil</li>
+          <li>Rituuu</li>
+          <li>Radha</li>
+          <li>Krishna</li>
+        </ul>
+      </nav>
+
+      <nav>
+        <ol>
+          <li>My name is anil</li>
+          <li>My self Anil</li>
+          <li>I am a bad+good boy</li>
+
+          <nav>
+            <ol>
+              <li>Op</li>
+              <li>yupp</li>
+              <li>HMM</li>
+              <li>ggg</li>
+            </ol>
+          </nav>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- I am applyinf for this using child combinator  but it will not work-->
+    <!-- body>ul {
+        color: white;
+        background: brown;
+    } -->
+    <nav>
+      <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore.
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Now I appliyed style using decendant selector -->
+    <!-- body #last {
+        color: white;
+        background: brown;
+    } -->
+    <nav>
+      <ul>
+        <li id="last">Lorem, ipsum dolor.</li>
+        <li id="last">Lorem ipsum dolor sit amet.</li>
+        <li id="last">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </li>
+      </ul>
+    </nav>
+
+    <section class="secc">
+      Lorem ipsum dolor sit amet.
+      <p>Anil</p>
+      <p>Pinky</p>
+      <p>This is red color</p>
+      <nav>
+        <p>d</p>
+        <p>d</p>
+        <li>d</li>
+        <p>d</p>
+      </nav>
+
+    
+    </section>
+  </body>
+</html>
+secc

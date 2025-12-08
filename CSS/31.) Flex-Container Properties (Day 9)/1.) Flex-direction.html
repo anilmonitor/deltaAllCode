@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part 1 Flexbox</title>
+    <style>
+        .container {
+            height: 150px;
+            width: 50%;
+            margin: 20px;
+            border: 3px solid green;
+        }
+
+        .box {
+            border: 1px solid rebeccapurple;
+
+        }
+
+        /* Row and Row-reverse */
+        #container1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #container2 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+
+
+        /* Column and column-reverse */
+        #container3 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #container4 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>1.) flex-direction Row</h2>
+        <div class="container" id="container1">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: gold;">box-2</div>
+            <div class="box" style="background-color: hotpink;">box-3</div>
+            <div class="box" style="background-color: grey;">box-4</div>
+        </div>
+        <h2>2.) flex-direction Row-Reverse</h2>
+        <div class="container" id="container2">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: gold;">box-2</div>
+            <div class="box" style="background-color: hotpink;">box-3</div>
+            <div class="box" style="background-color: grey;">box-4</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2> 3.) flex-direction Column</h2>
+        <div class="container" id="container3">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: gold;">box-2</div>
+            <div class="box" style="background-color: hotpink;">box-3</div>
+            <div class="box" style="background-color: grey;">box-4</div>
+        </div>
+        <h2>4.) flex-direction Column-Reverse</h2>
+        <div class="container" id="container4">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: gold;">box-2</div>
+            <div class="box" style="background-color: hotpink;">box-3</div>
+            <div class="box" style="background-color: grey;">box-4</div>
+        </div>
+    </section>
+</body>
+
+</html>

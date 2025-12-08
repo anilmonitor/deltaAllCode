@@ -1,0 +1,39 @@
+#outer {
+    height: 195px;
+    width: 70px;
+    border: 3px double black;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+div>div {
+    width: 50px;
+    height: 50px;
+    border: solid 2px rgb(0, 0, 0);
+    margin: 9px;
+    border-radius: 50%;
+}
+#red {
+    background-color: red;
+}
+#yellow {
+    background-color: yellow;
+}
+#green {
+    background-color: darkgreen;
+}
+h1{
+    color: #000;
+    background-color: #ff0;
+    border: 3px black double;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: inline;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
+img{
+    margin-left: 30px;
+    height: 200px;
+    width: 10px;
+}

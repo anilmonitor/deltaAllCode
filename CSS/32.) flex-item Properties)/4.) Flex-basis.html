@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 1px solid red;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            /* width: 100px; */
+            flex-shrink: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="cont1" style="background-color: red;">Box-1 My name is anil and I am a student of 12th
+            class</div>
+        <div class="box" id="cont2" style="background-color: blue;">Box-2 </div>
+        <div class="box" id="cont3" style="background-color: green;">Box-3</div>
+        <div class="box" id="cont4" style="background-color: #676700;">Box-4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .main {
+        display: flex;
+        height: 100vh;
+        margin: 1rem;
+      }
+      .sidebar {
+        background-color: red;
+        width: 300px;
+      }
+
+      .content {
+        background-color: green;
+        flex: 1;
+        overflow: auto;
+      }
+
+      .bottom {
+        background-color: yellow;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        height: 100px;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">sidebar</div>
+      <div class="content">content lorem1000</div>
+      <div class="bottom">bottom</div>
+    </div>
+  </body>
+</html>

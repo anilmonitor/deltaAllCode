@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-index</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      /* position must be set to apply z-index changes */
+      .two {
+        position: relative;
+        bottom: 50px;
+        left: 50px;
+        z-index: -1;
+      }
+      .three {
+        position: relative;
+        bottom: 90px;
+        left: 90px;
+      }
+      .four {
+        position: relative;
+        top: 60px;
+        left: 70px;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Z-index</h2>
+    <div class="box one" style="background-color: red">1</div>
+    <div class="box two" style="background-color: aqua">2</div>
+    <div class="box three" style="background-color: burlywood">3</div>
+    <div class="box four" style="background-color: darkgreen">4</div>
+    <div class="box five" style="background-color: blue">5</div>
+  </body>
+</html>

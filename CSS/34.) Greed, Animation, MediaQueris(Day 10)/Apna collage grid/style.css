@@ -1,0 +1,64 @@
+body{
+background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100vw;
+overflow: hidden;
+
+}
+.cont{
+    background-color: black;
+    height: 39.5rem;
+    width: 22rem;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+
+.topbar{
+    height: 2rem;
+    background-color: #000000;
+    color: #ffffffe7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.top-left{
+    margin-left: 1rem;
+}
+
+.top-right{
+margin-right: 1rem;
+}
+
+.top-right i{
+    padding-right: 1rem;
+}
+.keysection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    height: 64%;
+    width: 100%;
+align-items: center;
+justify-items: center;
+}
+
+ .keysection button{
+border: none;
+height: 3.2rem;
+width: 3.2rem;
+border-radius: 50%;
+color: #ffffffe7;
+background-color: #4e494982;
+font-size: 1.5rem;
+/
+}

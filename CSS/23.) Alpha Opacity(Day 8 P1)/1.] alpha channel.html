@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha chnnel</title>
+    <style>
+        #fir{
+            height: 50vh;
+            width: 20vw;
+            background-color: rgba(255,0 , 0, 0.1);
+        }
+
+        #sec{
+            height: 30vh;
+            width: 40vw;
+            background-color: #00ff0080;
+        }
+        #last{
+            color: rgba(255, 100, 250, 1);
+            background-color: rgba(25, 100, 200, 0);
+            /* background-color not  working due to 0 alpha channel but Text opacity is still visible */
+        }
+    </style>
+</head>
+<body>
+   <div id="fir"></div>
+    <div id="sec"></div>
+
+    <div id="last">This is Anil Kumar</div>
+</body>
+</html>

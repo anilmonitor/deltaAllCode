@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform-scale</title>
+    <style>
+        div {
+            height: 50px;
+            width: 200px;
+            margin: 5px;
+            margin-left: 150px;
+            margin-top: 300px;
+            text-align: center;
+        }
+
+
+        /* x and y both will work */
+        #one {
+            background-color: rgb(255, 9, 9);
+            transform: scale(2);
+            /* transform: scale(2, 2); */
+        }
+
+
+        /* 2 is for x and 6 is for y */
+        #two {
+            background-color: rgb(229, 68, 68);
+            transform: scale(2, 6);
+        }
+
+
+        /* only for x */
+        #three {
+            background-color: rgb(227, 126, 126);
+            transform: scaleX(2.4);
+        }
+
+
+        /* only for Y */
+        #four {
+            background-color: rgb(234, 201, 201);
+            transform: scaleY(5);
+        }
+
+        /* x and Y both */
+        #five {
+            background-color: green;
+            transform: scale(0.1);
+        }
+
+        .image img{
+            height: 200px;
+            border: 5px solid black;
+         transform: scale(1.7, 3);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one">1</div>
+    <div id="two">2</div>
+    <div id="three">3</div>
+    <div id="four">4</div>
+    <div id="five">5</div>
+
+    <div class="image"><img src="deepak.jpg" alt="img"></div>
+</body>
+
+</html>

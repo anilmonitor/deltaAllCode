@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of viewport height(vh) and viewport width(vw)</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         #outerdiv {
+            border: 2px dashed green;
+            background-color: rebeccapurple;
+            margin-top: 5px;
+            height: 50vh;
+            width: 70vw;
+        }
+
+        #innerdiv{
+            border: 2px solid blue;
+            background-color: yellow;
+            height: 30vh;
+            width: 60vw;
+        }
+    </style>
+</head>
+<body>
+     <div id="outerdiv">
+        <div id="innerdiv"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow Day8 P7</title>
+    <style>
+        div {
+            border-radius: 120px;
+            font-weight: bolder;
+            font-size: xx-large;
+            text-align: center;
+            margin: 100px;
+            width: 200px;
+            height: 50px;
+        }
+
+        /* 5px move along x and 10px move along y */
+        #box1 {
+            background-color: white;
+            box-shadow: 5px 10px 10px #212121;
+        }
+
+        #box2 {
+            border:   3px solid #8B8B8B ;
+
+            background-color: #f9f9f9;
+            transition: box-shadow 0.2s 0s  ease-in;
+            text-shadow: 0px 0px 3px red, 0px 0px 6px blue, 5px 4px 5px yellow;  
+        }
+        #box2:hover {
+            box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.463);
+
+        }
+
+
+        /* multiple color */
+        #box3{
+            box-shadow: 0px 0px 8px red, 3px 5px 7px yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">Button 1</div>
+    <div id="box2">Button 2</div>
+    <div id="box3">Button 3</div>
+</body>
+
+</html>

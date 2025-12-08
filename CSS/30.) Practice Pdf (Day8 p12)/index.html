@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF practice Day 8 P12</title>
+    <style>
+        /* Box 1 Q1 */
+        #box1 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transition-property: width;
+            transition-timing-function: ease-in;
+            transition-delay: 0.5s;
+            transition-duration: 2s;
+        }
+
+        #box1:hover {
+            width: 600px;
+
+        }
+
+
+
+        /* box2 Q2 */
+
+        #box2 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: translate(200px, 200px) rotate(-50deg);
+        }
+
+        /* Box 3 Q3 */
+
+        #box3 {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            transform: skewX(20deg)
+        }
+
+
+        /* Box 4 Q4 */
+        #box4 {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            box-shadow: 2px 2px 5px green;
+        }
+
+        /* Q5 */
+
+
+        #myPic {
+            width: 200px;
+            height: 200px;
+            background-image: url(mypic.jpg);
+            background-size: cover;
+            background-color: pink;
+            opacity: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div id="box1">This is box1</div>
+        <div id="box2">This is box2</div>
+        <div id="box3">This is box3</div>
+        <div id="box4">This is box4</div>
+        <div id="myPic">This is my Pic</div>
+    </body>
+
+</html>

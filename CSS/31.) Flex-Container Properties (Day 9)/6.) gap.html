@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gap in flex</title>
+    <style>
+        .container {
+            border: 1px solid green;
+            display: flex;
+            column-gap: 40px;
+        }
+
+
+        .container2 {
+            border: 1px solid green;
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div style="background-color: red;">Box1</div>
+        <div style="background-color: green;">box 2</div>
+        <div style="background-color: #093299;">Box1</div>
+        <div style="background-color: #ff00c8;">box 2</div>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="container2">
+        <div style="background-color: red;">Box1</div>
+        <div style="background-color: green;">box 2</div>
+        <div style="background-color: #093299;">Box1</div>
+        <div style="background-color: #ff00c8;">box 2</div>
+    </div>
+</body>
+
+</html>

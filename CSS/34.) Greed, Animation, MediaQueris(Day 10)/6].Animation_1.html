@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation in CSS</title>
+    <style>
+      .cont {
+        height: 150px;
+        width: 300px;
+        background-color: red;
+        animation-name: colorchange;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+
+        /* Or */
+
+        /* animation: fontSize 2s 0s ease infinite; */
+      }
+
+      @keyframes fontSize {
+        from {
+          font-size: small;
+        }
+        to {
+          font-size: xx-large;
+        }
+      }
+
+      @keyframes colorchange {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: #000080;
+        }
+      }
+
+
+      #AA12 {
+        margin-top: 10px;
+        animation-name: AAe;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        /* animation: button1 2s 1s ease infinite; */
+      }
+
+      
+      @keyframes AAe {
+        from {
+          background-color: #3d1c1c;
+        }
+
+        to {
+          background-color: red;
+          border: 3px solid green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">My Name is Anil</div>
+
+    <h1 id="AA12">Click me !!</h1>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+      }
+      .cont {
+        background: url(bgg.jpg);
+        height: 100vh;
+        width: 100vw;
+        color: white;
+      }
+
+      .sidebar_menu {
+        background-color: #fbfbfb38;
+        height: 100vh;
+        width: 250px;
+        overflow: none;
+        position: absolute;
+      }
+
+      .sidebar_menu .hamburger_menu {
+        background-color: #0505055f;
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5rem;
+        box-shadow: 0px 2px 4px #faf9f9c7;
+        margin-bottom: 1.4rem;
+      }
+
+      .sidebar_menu .hamburger_menu i {
+        cursor: pointer;
+      }
+      .sidebar_menu .hamburger_menu p {
+        font-weight: 800;
+        font-size: 1.09rem;
+        position: relative;
+        bottom: 2.1px;
+        cursor: default;
+      }
+
+      .sidebar_menu .hamburger_menu .fa-bars {
+        margin-left: 1rem;
+      }
+
+      .sidebar_menu .hamburger_menu .fa-xmark {
+        margin-right: 1rem;
+      }
+
+      .menu_item ul li a {
+        color: #ffffff9b;
+        text-decoration: none;
+        width: 225px;
+        display: block;
+        margin: 2.5px 0px 2.5px 0px;
+        padding: 1rem;
+        border: 1px solid #ffffff00;
+        font-size: 1.2rem;
+      }
+
+      .menu_item ul li a p {
+        display: inline;
+        position: absolute;
+        margin-left: 10px;
+      }
+
+      .menu_item ul li a:hover {
+        box-shadow: 0px 0px 5px #898989;
+        color: #ffffff;
+      }
+
+      .social {
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 10px;
+        position: relative;
+        bottom: 2rem;
+      }
+      .social a {
+        color: #b6aeaeee;
+        font-size: 1.2rem;
+      }
+
+      .social a:hover {
+        color: #e2dbdbe2;
+        transform: scale(1.1);
+      }
+
+      #check {
+        /* display: none; */
+      }
+
+      #check:checked ~ .sidebar_menu {
+        left: -260px;
+      }
+
+      /* #check:checked ~ .sidebar_menu .hamburger_menu .fa-bars {
+        left: 260px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <input type="checkbox" id="check" />
+
+      <div class="sidebar_menu">
+        <div class="hamburger_menu">
+          <label for="check"><i class="fa-solid fa-bars"></i></label>
+          <p>ANIL MONITOR</p>
+          <div class="cross_icon">
+            <label for="check"><i class="fa-solid fa-xmark"></i></label>
+          </div>
+        </div>
+
+        <div class="menu_item">
+          <ul>
+            <li>
+              <a href="https://youtube.com/anilmonitor"
+                ><i class="fa-brands fa-youtube"></i>
+                <p>Anil Monitor</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://xpertbite.in">
+                <i class="fa-solid fa-globe"></i>
+                <p>Xpert bite</p></a
+              >
+            </li>
+            <li>
+              <a href="https://photos.app.goo.gl/fokWP64mc3AMXBwA8"
+                ><i class="fa-solid fa-image"></i>
+                <p>Gallery</p></a
+              >
+            </li>
+            <li>
+              <a href="https://xpertbite.in/about-us/">
+                <i class="fa-solid fa-address-card"></i>
+                <p>About us</p></a
+              >
+            </li>
+            <li>
+              <a href="https://xpertbite.in/contact-us/">
+                <i class="fa-solid fa-phone"></i>
+                <p>Contact</p></a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-comments"></i>
+                <p>Feedback</p></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

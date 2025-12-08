@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .d1 {
+        height: 500px;
+        width: 500px;
+        background-color: rgb(93, 82, 82);
+        border: 5px solid black;
+        animation: border 2s ease 0s infinite alternate-reverse;
+        font-size: 7rem;
+      }
+
+      @keyframes border {
+        0% {
+          border: 5px solid rgb(222, 14, 14);
+          color: blue;
+        }
+
+        25% {
+          border: 5px solid rgb(4, 31, 239);
+          color: aqua;
+        }
+        50% {
+          border: 5px solid rgb(0, 165, 33);
+          color: brown;
+        }
+
+        75% {
+          border: 5px solid rgb(231, 4, 239);
+          color: green;
+        }
+
+        100% {
+          border: 5px solid rgb(239, 215, 4);
+          color: cyan;
+        }
+      }
+
+      .d2 {
+        height: 10px;
+        width: 10px;
+        /* background-color: black; */
+        margin-top: 40px;
+        border-radius: 50%;
+        border: 5px solid red;
+        border-top: 5px solid rgb(0, 37, 186);
+        animation: spin 1s linear infinite;
+        display: inline-block;
+      }
+
+      h1 {
+        display: inline;
+      }
+
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .dot1 {
+        height: 3px;
+        width: 3px;
+        background-color: black;
+        display: inline-block;
+        border-radius: 50%;
+       
+        animation: dotmove 0.5s ease 0s infinite alternate-reverse;
+      }
+
+      @keyframes dotmove {
+        100% {
+          transform: scale(2);
+        }
+      }
+
+      #form12 {
+        height: 400px;
+        width: 500px;
+        border: 2px solid black;
+      }
+
+      table {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="d1">ANil kumar</div> -->
+
+    <div class="d2"></div>
+    <h1>Loading</h1>
+    <div class="dot1 p1"></div>
+    <div class="dot1 p2"></div>
+    <div class="dot1 p3"></div>
+  </body>
+</html>

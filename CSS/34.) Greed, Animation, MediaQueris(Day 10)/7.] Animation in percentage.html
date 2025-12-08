@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation in percentage</title>
+    <style>
+      .cont {
+        height: 150px;
+        width: 300px;
+        background-color: #000000;
+        color: bisque;
+        text-align: center;
+        border: 2.4px solid white;
+
+        animation-name: border;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+
+        /* OR */
+
+        /* Animation shorthand =  */
+        animation: border 1s 0s ease infinite alternate-reverse;
+      }
+
+      @keyframes border {
+        0% {
+          box-shadow: 0px 0px 10px blue;
+        }
+        50% {
+          box-shadow: 0px 0px 10px #00deea;
+        }
+        75% {
+          box-shadow: 0px 0px 10px #007b02;
+        }
+        100% {
+          box-shadow: 0px 0px 10px #ff13e0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">My Name is Anil</div>
+  </body>
+</html>

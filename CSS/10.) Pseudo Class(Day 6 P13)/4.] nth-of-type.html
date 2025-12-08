@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth-of-type (pseudo class)</title>
+    <style>
+        h1:nth-of-type(2n) {
+            color: red;
+        }
+
+        nav ol li:nth-of-type(2n) {
+            color: yellow;
+            background-color: #000;
+        }
+
+        div>li:nth-of-type(odd) {
+            color: blue;
+        }
+
+        div>li:nth-of-type(even) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Anil</h1>
+    <h1>Rahul</h1>
+    <h1>Mandip</h1>
+    <h1>Ritu</h1>
+    <h1>Neha</h1>
+    <h1>Pinky</h1>
+    <h1>Saurabh</h1>
+    <h1>Kajal</h1>
+    <h1>Majal</h1>
+    <h1>Pagal</h1>
+
+    <nav>
+        <ol>
+            <li>AAA</li>
+            <li>BBB</li>
+            <li>CCC</li>
+            <li>DDD</li>
+            <li>EEE</li>
+            <li>FFF</li>
+            <li>GGG</li>
+            <li>HHH</li>
+            <li>III</li>
+            <li>JJJ</li>
+            <li>KKK</li>
+            <li>LLL</li>
+            <li>MMM</li>
+            <li>NNN</li>
+            <li>OOO</li>
+            <li>PPP</li>
+            <li>QQQ</li>
+            <li>RRR</li>
+            <li>SSS</li>
+            <li>TTT</li>
+        </ol>
+    </nav>
+
+    <div>
+        <li>odd</li>
+        <li>Even</li>
+        <li>Odd</li>
+        <li>Even</li>
+    </div>
+</body>
+
+</html>

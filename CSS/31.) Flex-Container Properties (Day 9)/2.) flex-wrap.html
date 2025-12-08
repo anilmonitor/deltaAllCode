@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-warap</title>
+    <style>
+        .container {
+            border: 2px solid green;
+            height: 100px;
+        }
+
+        .boc {
+            width: 60px;
+        }
+
+
+
+        /* nowarp */
+        #con1 {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+
+        /* wrap */
+        #con2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        /* wrap-reverse */
+        #con3 {
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>1.) Flex-wrap: nowrap</h2>
+        <div class="container" id="con1">
+            <div class="boc" style="background-color: blue; color: #fff;">Box-1</div>
+            <div class="boc" style="background-color: red;color: #fff">Box-2</div>
+            <div class="boc" style="background-color: green;color: #fff">Box-3</div>
+            <div class="boc" style="background-color: black;color: #fff">Box-4</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>2.) Flex-wrap: wrap</h2>
+        <div class="container" id="con2">
+            <div class="boc" style="background-color: blue; color: #fff;">Box-1</div>
+            <div class="boc" style="background-color: red;color: #fff">Box-2</div>
+            <div class="boc" style="background-color: green;color: #fff">Box-3</div>
+            <div class="boc" style="background-color: black;color: #fff">Box-4</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>3.) Flex-wrap: wrap-reverse</h2>
+        <div class="container" id="con3">
+            <div class="boc" style="background-color: blue; color: #fff;">Box-1</div>
+            <div class="boc" style="background-color: red;color: #fff">Box-2</div>
+            <div class="boc" style="background-color: green;color: #fff">Box-3</div>
+            <div class="boc" style="background-color: black;color: #fff">Box-4</div>
+        </div>
+    </section>
+</body>
+
+</html>

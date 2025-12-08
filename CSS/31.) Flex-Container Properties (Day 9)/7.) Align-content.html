@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-content use</title>
+    <style>
+        .containt {
+            border: 2px solid green;
+            height: 150px;
+        }
+
+
+        /*1.) Align-content: flex-start */
+        #cont1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-start;
+        }
+
+
+        /*2.) Align-content: flex-end */
+        #cont2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-end;
+        }
+
+
+        /*3.) Align-content: center */
+        #cont3 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+
+
+        /* 4.) Align-content: space-between; */
+        #cont4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: space-between;
+        }
+
+
+        /* 5.)Align-content: space-evenly */
+        #cont5 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            align-content: space-evenly;
+        }
+
+
+        /* 6.) Align-content: space-around */
+        #cont6 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            align-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>1.) Align-content: flex-start</h2>
+        <div class="containt" id="cont1">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: red;">box-2</div>
+            <div class="box" style="background-color: yellow;">box-3</div>
+            <div class="box" style="background-color: blueviolet;">box-4</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>2.) Align-content: flex-end</h2>
+        <div class="containt" id="cont2">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: red;">box-2</div>
+            <div class="box" style="background-color: yellow;">box-3</div>
+            <div class="box" style="background-color: blueviolet;">box-4</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>3.) Align-content: center</h2>
+        <div class="containt" id="cont3">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: red;">box-2</div>
+            <div class="box" style="background-color: yellow;">box-3</div>
+            <div class="box" style="background-color: blueviolet;">box-4</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>4.) Align-content: space-between</h2>
+        <div class="containt" id="cont4">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: red;">box-2</div>
+            <div class="box" style="background-color: yellow;">box-3</div>
+            <div class="box" style="background-color: blueviolet;">box-4</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>5.) Align-content: space-evenly</h2>
+        <div class="containt" id="cont5">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: red;">box-2</div>
+            <div class="box" style="background-color: yellow;">box-3</div>
+            <div class="box" style="background-color: blueviolet;">box-4</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>6.) Align-content: space-around</h2>
+        <div class="containt" id="cont6">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: red;">box-2</div>
+            <div class="box" style="background-color: yellow;">box-3</div>
+            <div class="box" style="background-color: blueviolet;">box-4</div>
+        </div>
+    </section>
+</body>
+
+</html>

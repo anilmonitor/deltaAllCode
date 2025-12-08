@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-items</title>
+    <style>
+        .container {
+            border: 1px solid red;
+            height: 30vh;
+        }
+
+        h2 {
+            display: inline-block;
+        }
+
+
+        /* Align-items: stretch <span>Itz default align item </span> */
+
+        #cont1 {
+            display: flex;
+            align-items: stretch;
+        }
+
+
+        /* Align-items: flex-start */
+        #cont2 {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        /* Align-items: flex-end */
+        #cont3 {
+            display: flex;
+            align-items: flex-end;
+        }
+
+
+        /* Align-items:center */
+        #cont4 {
+            display: flex;
+            align-items: center;
+        }
+
+
+        /* Align-items: baseline */
+        #cont5 {
+            display: flex;
+            align-items: baseline;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>1.) Align-items: stretch</h2> <span>Itz default align item </span>
+        <div class="container" id="cont1">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: red;">box-2</div>
+            <div class="box" style="background-color: green;">box-3</div>
+            <div class="box" style="background-color: orange;">box-4</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>2.) Align-items: flex-start</h2>
+        <div class="container" id="cont2">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: red;">box-2</div>
+            <div class="box" style="background-color: green;">box-3</div>
+            <div class="box" style="background-color: orange;">box-4</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>3.) Align-items: flex-end</h2>
+        <div class="container" id="cont3">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: red;">box-2</div>
+            <div class="box" style="background-color: green;">box-3</div>
+            <div class="box" style="background-color: orange;">box-4</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>4.) Align-items:center</h2>
+        <div class="container" id="cont4">
+            <div class="box" style="background-color: aqua;">box-1</div>
+            <div class="box" style="background-color: red;">box-2</div>
+            <div class="box" style="background-color: green;">box-3</div>
+            <div class="box" style="background-color: orange;">box-4</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>5.) Align-items: baseline</h2>
+        <div class="container" id="cont5">
+            <div class="box" style="background-color: aqua;">
+                <h1>box-1</h1>
+            </div>
+            <div class="box" style="background-color: red;">
+                <h4>box-2</h4>
+            </div>
+            <div class="box" style="background-color: green;">
+                <h1>box-3 shjs</h1>
+            </div>
+            <div class="box" style="background-color: orange;">
+                <h6>Box 4</h6>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

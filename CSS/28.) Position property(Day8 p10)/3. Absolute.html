@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position:absolute</title>
+    <style>
+
+
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: darkgreen;
+        border: 1px solid black;
+        margin: 20px;
+        display: inline-block;
+        color: #e71e1e;
+      }
+
+      .d2 {
+        background-color: yellow;
+        position: absolute;
+        top: 200px;
+        left: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+        <h1>Position:Relative</h1>
+        <div class="d0">Relative top: 200px; left: 300px;</div>
+        <div class="d00"></div>
+      </section>
+
+    <section>
+      <h1>Position:Absolute</h1>
+      <div class="d1">top: 200px; left: 300px;</div>
+      <div class="d2"></div>
+    </section>
+  </body>
+</html>
