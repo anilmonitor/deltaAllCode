@@ -73,4 +73,5 @@ app.get("/search", (req, res) => {
   console.log(req.query);
   let { q } = req.query;
   res.send(`Your Queries is: ${q}`);
+ 
 });
