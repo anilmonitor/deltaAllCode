@@ -20,3 +20,10 @@ app.get("/ejs", (req, res) => {
     age: 10,
   });
 });
+
+app.get("/random", (req, res) => {
+  let randomVal = Math.floor(Math.random() * 6 + 1);
+  res.render("rollDice.ejs", {
+    value: randomVal,
+  });
+});
