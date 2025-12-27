@@ -6,7 +6,10 @@ app.listen(PORT, () => {
   console.log("App is listening on port", PORT);
 });
 
+app.set("view engine", "ejs");
+
+
+
 app.get("/", (req, res) => {
-  console.log("Hye");
-  res.send("done");
+  res.render("home.ejs");
 });
