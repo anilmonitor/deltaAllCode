@@ -1,14 +1,12 @@
-const express = require("express");
+import express from "express";
+
 const app = express();
-
-const port = 8080;
-
-app.listen(port, () => {
-  console.log(`Listening on port no. ${port}`);
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log("App is listening on port", PORT);
 });
 
-app.set("view engine", "ejs");
-
 app.get("/", (req, res) => {
-  res.render("home.ejs");
+  console.log("Hye");
+  res.send("done");
 });

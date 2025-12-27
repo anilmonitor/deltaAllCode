@@ -1,77 +1,84 @@
-let express = require("express");
+// import { add, sub } from "./ok/index.js";
+import express from "express";
 
-let app = express();
-// console.log(express);
-let port = 8080;
+// import { generateSlug } from "random-word-slugs";
 
-app.listen(port, () => {
-  console.log(`app is listening on the port ${port}`);
+// const slug = generateSlug();
+// console.log("NEW JOKE IS: ", slug, slug);
+
+const app = express();
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log("PORT is listing");
 });
 
-/*
-//sending a response
-app.use((req, res) => {
-  console.log("New incoming request");
-  res.send("This is basic respose");
-
-  next();
-});
-*/
-
-/*
-//sending object in response
-app.use((req, res) => {
-
-   console.log("Another New incoming request");
-  res.send({
-    name: "anil",
-    age: 23,
-    gender: "male",
-    year: 2025,
-  });
+// 1st  GET HTTP request --> Data read / dekhne ke liye
+app.get("/Anil", (req, res) => {
+  res.send(" I am ANIL");
 });
 
-*/
-
-/*
-// sending response in html formate
-app.use((req, res) => {
-  let newRes =
-    "<h1> This is response </h1> <ol> <li> Anil </li> <li> Manjeet </li> </ol>";
-  res.send(newRes);
-});
-*/
-
-/*
-// Routing --> using get() method
-app.get("/", (req, res) => {
-  res.send("This is Home page!!");
+// 2nd POST HTTP request --> Data send / create karne ke liye
+app.post("/users", (req, res) => {
+  res.send("This is post respose");
 });
 
-app.get("/about", (req, res) => {
-  res.send("<h1> About us page </h1>");
+// 3rd PUT HTTP request --> Full update ke liye
+app.put("/users/:id", (req, res) => {
+  res.send("Updated");
 });
 
-app.get("/contact", (req, res) => {
-  res.send("<h1> Contact us: +91 7488168228 </h1>");
+// 4th PATCH HTTP request -->  Partial update (sirf ek field)
+app.patch("/users/:id", (req, res) => {
+  res.send("Partially updated");
 });
 
-app.use((req, res) => {
-  res.send("<h1> This page not available !!! </h1>");
-});
-*/
-
-// Path parameter
-app.get("/:username/:pass", (req, res) => {
-  let { username, pass } = req.params;
-  console.log(username, pass);
-  res.send(`Your Instagram id ${username} and pass ${pass}`);
+// 5th DELETE HTTP request -->  Data remove karne ke liye
+app.delete("/users/:id", (req, res) => {
+  res.send("Deleted");
 });
 
-// Query strings
+// 6th app.USE --> har type ka http request ko listen karta hain.
+app.use("/jsonRes", (req, res) => {
+  let student = {
+    name: "ANil",
+    age: 22,
+    address: "Garhwa",
+  };
+  // let collection = ["Anil", "Rahul", "manish"];
+  res.send(student);
+});
+
+//html res
+app.use("/htmlRes", (req, res) => {
+  let data = "<h1> My name is anil </h1>  <p> this is HTML http res </p> ";
+
+  res.send(data);
+});
+
+//Path prameter
+// app.get("/easylike/:username/:pass", (req, res) => {
+//   let login = req.params;
+//   // let {username, pass} = req.params;
+//   //  let user = "<input type="text" placeholder=" username">"
+//   res.send(`Your username is: ${login.username} and pass is: ${login.pass}`);
+//   console.log(`Your username is: ${login.username} and pass is: ${login.pass}`);
+// });
+
+app.get("/:username/:gender/:age", (req, res) => {
+  let data = req.params;
+  console.log(data);
+
+  // res.json({
+  //   message: "Data received",
+  //   data: data,
+  // });
+
+  res.send(data.age);
+});
+
+//query string
 app.get("/search", (req, res) => {
-  console.log(req.query);
-  let { q } = req.query;
-  res.send(`Your Queries is: ${q}`);
- 
+  let q = req.query;
+  console.log(q);
+  res.send(q);
 });
