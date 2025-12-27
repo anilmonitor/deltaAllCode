@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning the concept of ejs</title>
+  </head>
+  <body>
+    <h1><%= ["Anil","Rahul","Manoj"] %></h1>
+
+    <h1>Hello <%= name %></h1>
+    <p>Your age is <%= age %></p>
+
+    <!-- if else in ejs   -->
+    <% if(age>= 18){ %>
+    <p>Adult</p>
+    <% } else { %>
+    <p>Minar</p>
+    <% }%>
+
+    <h1>Number printing</h1>
+    <% for(let i = 0; i<=10; i++){ %>
+    <p><%= i %></p>
+    <% } %>
+
+    <!-- input -->
+    <form action="/ejs" method="get">
+      <input type="text" name="username" placeholder="Enter name" />
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
