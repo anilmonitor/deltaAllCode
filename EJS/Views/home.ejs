@@ -65,6 +65,13 @@
       .card-content a:hover {
         background-color: #0056b3;
       }
+
+      h4 {
+        background-color: black;
+        color: white;
+        padding: 0.2rem;
+        border-radius: 4px;
+      }
     </style>
   </head>
   <body>
@@ -76,6 +83,9 @@
 
       <div class="card-content">
         <h2>React</h2>
+        <h4>
+          My name is <%= details.Name %> n I am <%= details.age %> year old.
+        </h4>
         <p>
           React is a JavaScript library for building user interfaces. It is
           maintained by Meta and widely used for web applications.

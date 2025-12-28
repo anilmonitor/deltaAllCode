@@ -9,10 +9,6 @@ app.listen(PORT, () => {
 //ejs
 app.set("view engine", "ejs");
 
-app.get("/", (req, res) => {
-  res.render("home.ejs");
-});
-
 app.get("/ejs", (req, res) => {
   const username = req.query.username;
   res.render("learnEjs.ejs", {
@@ -30,10 +26,16 @@ app.get("/random", (req, res) => {
 
 //insta PAGE
 app.get("/instagram/:user/:pageAge", (req, res) => {
-  const username= req.params;
+  const username = req.params;
   res.render("insta.ejs", {
     username,
   });
+  console.log(username);
+});
 
-  console.log(username)
+app.get("/home", (req, res) => {
+  let details = req.query;
+  res.render("home.ejs", { details });
+
+  console.log(details);
 });
