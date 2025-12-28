@@ -27,3 +27,13 @@ app.get("/random", (req, res) => {
     value: randomVal,
   });
 });
+
+//insta PAGE
+app.get("/instagram/:user/:pageAge", (req, res) => {
+  const username= req.params;
+  res.render("insta.ejs", {
+    username,
+  });
+
+  console.log(username)
+});
