@@ -24,7 +24,9 @@
       <button>follow</button>
       <button>Message</button>
 
-      <p><%= 5+5 %></p>
+      <% for(let i = 0; i< followers.length; i++){ %>
+      <li><%= followers[i] %></li>
+      <% } %>
     </div>
   </body>
 </html>

@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Random NUM</title>
-    <style> h1, p{
+    <style>
+      h1,
+      p {
         display: inline-block;
         margin-left: 1rem;
-    }
-    span{
+      }
+      span {
         font-size: 1.5rem;
-    }
+      }
     </style>
   </head>
   <body>
-    <p> <span>Randrom number is:</span> <h1><%=  value %></h1></p>
+    <h2>Rolled result <%= randomVal %></h2>
+
+    <% if(randomVal == 6 ){ %>
+    <p>Nice!! you got <%= randomVal %> ROll it again</p>
+    <% } %>
   </body>
 </html>
