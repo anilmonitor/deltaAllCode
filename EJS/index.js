@@ -34,9 +34,9 @@ app.get("/rollDice", (req, res) => {
 });
 
 //insta PAGE
-// app.get("/instagram/:username", (req, res) => {
-//   console.log(data);
+app.get("/instagram", (req, res) => {
+ res.send("We have moved to InstaByReq")
 
-// });
+});
 
-console.log(data);
+
