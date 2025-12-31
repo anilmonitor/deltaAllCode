@@ -17,16 +17,9 @@
   <body>
     <div class="div">
       <h1>INSTAGRAM</h1>
-      <h2>
-        itz @<%= username.user %> page and <br />
-        Page Age is <%= username.pageAge %> Year
-      </h2>
+      <h2>itz @ username.user page and <br /></h2>
       <button>follow</button>
       <button>Message</button>
-
-      <% for(let i = 0; i< followers.length; i++){ %>
-      <li><%= followers[i] %></li>
-      <% } %>
     </div>
   </body>
 </html>

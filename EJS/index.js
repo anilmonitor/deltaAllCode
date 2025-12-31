@@ -1,5 +1,4 @@
 import express from "express";
-import data from "./data.json" assert { type: "json" }; //--> assert { type: "json" } kya hai? --> Isse Node.js ko clear bataya jata hai ki: “Bhai, main JSON file import kar raha hoon, JS module nahi.”
 
 const app = express();
 const PORT = 3000;
@@ -35,8 +34,9 @@ app.get("/rollDice", (req, res) => {
 });
 
 //insta PAGE
-app.get("/instagram/:username", (req, res) => {
+// app.get("/instagram/:username", (req, res) => {
+//   console.log(data);
 
-  console.log(data);
-  // res.render("insta.ejs");
-});
+// });
+
+console.log(data);
