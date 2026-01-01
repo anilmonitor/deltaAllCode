@@ -68,10 +68,10 @@ console.log(p2.talk()); //this will print Hi I am Anil and my age is 23
 
 // inheritance OOPS
 
-// first try 
+// first try
 class Student {
   constructor(name, age, marks) {
-    this.name = name;
+    this.name = name; //--> here this is referr to s1 obj
     this.age = age;
     this.marks = marks;
   }
@@ -83,7 +83,7 @@ class Student {
 
 class Teacher {
   constructor(name, age, subject) {
-    this.name = name;
+    this.name = name; //--> here this is refer to t1 obj
     this.age = age;
     this.subject = subject;
   }
@@ -92,9 +92,8 @@ class Teacher {
     console.log(`I am ${this.name} n I Teach ${this.subject}`);
   }
 }
- 
-let s1 = new Student("Anil", 23, 84);
-let t1 = new Teacher("RupamK Pal", 60, "physics");
-console.log(s1);
-console.log(t1);
 
+let s1 = new Student("Anil", 23, 84);
+let t1 = new Teacher("RupamK Pal", 60, "Physics");
+console.log(s1); //--> I am Anil n I got 84 marks
+console.log(t1); // --> I am Rupamk Pal n I teach Physics
