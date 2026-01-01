@@ -6,8 +6,7 @@
 // };
 
 //factor function
-
-function student(name, age) {
+function personMaker(name, age) {
   const person = {
     name: name,
     age: age,
@@ -15,7 +14,11 @@ function student(name, age) {
       console.log(`I am ${this.name}`);
     },
   };
+  return person;
 }
 
-let s1 = student("Anil", 22);
-let s2 = student("Rahul", 23);
+let s1 = personMaker("Anil", 22);
+let s2 = personMaker("Rahul", 23);
+
+console.log(s1);
+console.log(s2);
