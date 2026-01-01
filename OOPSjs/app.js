@@ -16,3 +16,6 @@ function student(name, age) {
     },
   };
 }
+
+let s1 = student("Anil", 22);
+let s2 = student("Rahul", 23);
