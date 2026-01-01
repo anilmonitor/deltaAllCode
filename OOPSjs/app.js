@@ -47,6 +47,7 @@ console.log(p1);
 console.log(p2);
 */
 
+/*
 // Class (OOPS)
 
 class Person {
@@ -63,3 +64,37 @@ let p1 = new Person("Anil", 23);
 let p2 = new Person("Rahul", 25);
 console.log(p1); //this will print p1 obj
 console.log(p2.talk()); //this will print Hi I am Anil and my age is 23
+*/
+
+// inheritance OOPS
+
+// first try 
+class Student {
+  constructor(name, age, marks) {
+    this.name = name;
+    this.age = age;
+    this.marks = marks;
+  }
+
+  talk() {
+    console.log(`I am ${this.name} n I got ${this.marks}`);
+  }
+}
+
+class Teacher {
+  constructor(name, age, subject) {
+    this.name = name;
+    this.age = age;
+    this.subject = subject;
+  }
+
+  talk() {
+    console.log(`I am ${this.name} n I Teach ${this.subject}`);
+  }
+}
+ 
+let s1 = new Student("Anil", 23, 84);
+let t1 = new Teacher("RupamK Pal", 60, "physics");
+console.log(s1);
+console.log(t1);
+
