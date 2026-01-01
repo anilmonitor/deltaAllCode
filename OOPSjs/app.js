@@ -68,6 +68,7 @@ console.log(p2.talk()); //this will print Hi I am Anil and my age is 23
 
 // inheritance OOPS
 
+/*
 // first try
 class Student {
   constructor(name, age, marks) {
@@ -92,8 +93,37 @@ class Teacher {
     console.log(`I am ${this.name} n I Teach ${this.subject}`);
   }
 }
+*/
+
+// try second --> using inheritance
+class Parent {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  talk() {
+    console.log(`I am ${this.name}`);
+  }
+}
+
+class Student extends Parent {
+  constructor(name, age, marks) {
+    super(name, age);
+    this.marks = marks;
+  }
+}
+
+class Teacher extends Parent {
+  constructor(name, age, subject) {
+    super(name, age);
+    this.subject = subject;
+  }
+}
 
 let s1 = new Student("Anil", 23, 84);
 let t1 = new Teacher("RupamK Pal", 60, "Physics");
 console.log(s1); //--> I am Anil n I got 84 marks
 console.log(t1); // --> I am Rupamk Pal n I teach Physics
+
+//-- OOPs in java done for now --
