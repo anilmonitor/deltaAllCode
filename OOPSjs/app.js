@@ -26,13 +26,15 @@ console.log(s2);
 
 */
 
-//new operator --> It does't return and It start with capital letter
+//new operator
+// Constructors --> It does't return and It start with capital letter
 function Person(name, age) {
-  this.name = name;
+  this.name = name; //--> ( here this refer to p1,p2,p3,..... objects )
   this.age = age;
 }
 
-Person.prototype.talk = function () {
+Person.prototype.talk = function () {   //-->  (ye prototype ab p1,p2,p3.... objects ke pas bhi rhega )
+
   console.log(`I am ${this.name}`);
 };
 
