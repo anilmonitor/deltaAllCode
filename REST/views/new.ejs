@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add new post</title>
+
+    <style>
+      form {
+        max-width: 500px;
+        margin: auto;
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Inputs & Textarea */
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        outline: none;
+        font-size: 14px;
+      }
+
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #2563eb;
+      }
+
+      /* Button */
+      button {
+        background: #16a34a;
+        color: white;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: background 0.2s ease;
+      }
+
+      button:hover {
+        background: #15803d;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Write new post</h1>
+    <form method="post" action="/posts">
+      <input type="text" name="username" placeholder="Enter username" />
+      <br /><br />
+      <textarea name="content" placeholder="Write your content"></textarea>
+      <br /><br />
+      <button>Post content</button>
+    </form>
+  </body>
+</html>

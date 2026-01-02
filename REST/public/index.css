@@ -1,0 +1,73 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+  background: #f3f4f6;
+  padding: 40px;
+}
+
+/* Headings */
+.heading,
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #7c2d12;
+}
+
+/* Container */
+.cont {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Post Card */
+.posts {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.posts:hover {
+  transform: translateY(-3px);
+}
+
+/* Username */
+.posts h3 {
+  color: #1d4ed8;
+  margin-bottom: 8px;
+}
+
+/* Content */
+.posts p {
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* Add New Post Link */
+a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+a:hover {
+  background: #1e40af;
+}
+
+/* ---------- Form Styling ---------- */
+
