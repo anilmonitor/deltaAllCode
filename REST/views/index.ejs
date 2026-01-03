@@ -7,17 +7,21 @@
     <title>Blog Page</title>
   </head>
   <body>
-    <h1 class="heading">Qura POST</h1>
+    <h1 class="heading">Quora POST</h1>
 
-    <div class="cont">
-      <% for(post of posts){ %>
-      <div class="posts">
+  
+
+     <% posts.forEach((post, index) =>{ %>
+ <div class="posts">
+  <h3>Post id: <%=post.id %> </h3>
         <h3><%= post.username %></h3>
         <p><%= post.content %></p>
+        
+        <a href="http://localhost:3000/posts/<%= post.id %>">View Post</a>
+        
       </div>
-      <% } %>
+     <% }) %>
 
-      
       <a href="http://localhost:3000/posts/new">Add new post</a>
     </div>
   </body>
