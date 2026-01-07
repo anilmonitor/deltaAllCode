@@ -16,9 +16,11 @@
   <h3>Post id: <%=post.id %> </h3>
         <h3><%= post.username %></h3>
         <p><%= post.content %></p>
-        
+        <img src="<%=post.photo%>">
         <a href="http://localhost:3000/posts/<%= post.id %>">View Post</a>
-        
+         <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+      <button>Delete resource</button>
+    </form>
       </div>
      <% }) %>
 

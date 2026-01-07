@@ -41,14 +41,24 @@ app.get("/posts/new", (req, res) => {
 });
 
 app.post("/posts", (req, res) => {
-  let { username, content } = req.body;
+  let { username, content, photo } = req.body;
   let id = str10_36();
-  posts.push({ id, username, content });
+  posts.push({ id, username, content, photo });
   res.redirect("http://localhost:3000/posts");
+  // console.log(req.body);
 });
 
 app.get("/posts/:id", (req, res) => {
   let { id } = req.params;
   let post = posts.find((p) => id === p.id);
   res.render("viewPost.ejs", { post });
+});
+
+app.delete("/posts/:id", (req, res) => {
+  let { id } = req.params;
+  posts = posts.filter((p) => id !== p.id);
+
+  // res.send("delete su");
+
+   res.redirect("http://localhost:3000/posts"); 
 });
