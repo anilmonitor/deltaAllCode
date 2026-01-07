@@ -18,6 +18,7 @@
         <p><%= post.content %></p>
         <img src="<%=post.photo%>">
         <a href="http://localhost:3000/posts/<%= post.id %>">View Post</a>
+       <a href="http://localhost:3000/posts/<%= post.id %>/edit">Edit</a>
          <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
       <button>Delete resource</button>
     </form>
