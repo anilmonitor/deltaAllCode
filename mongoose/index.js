@@ -41,7 +41,7 @@ user2
     */
 
 // inserting multiple document at the same time (NOT much use)
-
+/*
 User.insertMany([
     {
         name: "Neha Kumari",
@@ -66,3 +66,6 @@ User.insertMany([
     .catch((e) => {
         console.log(e);
     });
+ */
+
+User.insertOne({ name: "Sonali Kumari", age: 25, gender: "Female" });
