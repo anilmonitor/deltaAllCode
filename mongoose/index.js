@@ -12,5 +12,12 @@ async function main() {
 
 }
 
+const userSchema = new mongoose.Schema({
+
+    name: String,
+    gender: String,
+    age: Number,
+
+});
 
 
