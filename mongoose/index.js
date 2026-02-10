@@ -12,6 +12,7 @@ async function main() {
 
 }
 
+//Making new Schema
 const userSchema = new mongoose.Schema({
 
     name: String,
@@ -20,4 +21,7 @@ const userSchema = new mongoose.Schema({
 
 });
 
+//Making new Model
+const User = mongoose.model("User", userSchema);
+const Emoployee = mongoose.model("Emoployee", userSchema);
 
