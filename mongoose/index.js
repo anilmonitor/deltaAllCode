@@ -182,17 +182,25 @@ User.deleteMany({ gender: "Male" }).then((res) => {
 })
 */
 
+/*
 // iii.  Model.findByIdAndDelete()
 User.findByIdAndDelete(("698b8ce63ae52db78d2df392"), { new: true }).then((res) => {
     console.log(res);
 }).catch((e) => {
     console.log(e);
-})
+})*/
 
 
+/*
 //  iv. Model.findOneAndDelete()
 User.findOneAndDelete({ gender: "Female" }).then((res) => {
     console.log(res);
 }).catch((e) => {
     console.log(e);
-})
+})*/
+
+
+
+
+
+
