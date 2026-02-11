@@ -103,9 +103,17 @@ User.findOne({ age: { $gt: 30 } })
     })
 */
 
-
+/*
 // findbyId() -->  Commonly used
 User.findById(("698b8f17e1a77d4969f148ba")) //this will give the matched document
+    .then((res) => {
+        console.log(res);
+    }).catch((e) => {
+        console.log(e);
+    }) */
+
+//Model.updateOne()
+User.updateOne({ age: { $lt: 20 } }, { age: 100 }) //jiska age 20 se kam h usko update kr do
     .then((res) => {
         console.log(res);
     }).catch((e) => {
