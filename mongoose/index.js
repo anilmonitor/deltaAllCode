@@ -80,15 +80,23 @@ User.find({})
         console.log(e);
     }) */
 
-
+/*
 //lets apply some condition
-User.find({ age: { $gt: 30 } })
+User.find({ age: { $gt: 20 } })
     .then((res) => {
-        console.log(`His age is ${res[0].age} `); //we want age 
+        console.log(`His age is ${res[5].age} `); //we want age 
+    })
+    .catch((e) => {
+        console.log(e); 
+    })
+
+*/
+//FindOne()
+User.findOne({ age: { $gt: 30 } })
+    .then((res) => {
+        console.log(res.name);
     })
     .catch((e) => {
         console.log(e);
     })
-
-
 
