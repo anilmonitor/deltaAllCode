@@ -68,4 +68,18 @@ User.insertMany([
     });
  */
 
-User.insertOne({ name: "Sonali Kumari", age: 25, gender: "Female" });
+// Find()
+
+User.find({})
+    .then((res) => {
+        console.log(res); //print all the documents
+    })
+
+    .catch((e) => {
+
+        console.log(e);
+    })
+
+
+
+
