@@ -91,12 +91,24 @@ User.find({ age: { $gt: 20 } })
     })
 
 */
+
+/*
 //FindOne()
 User.findOne({ age: { $gt: 30 } })
     .then((res) => {
         console.log(res.name);
     })
     .catch((e) => {
+        console.log(e);
+    })
+*/
+
+
+// findbyId() -->  Commonly used
+User.findById(("698b8f17e1a77d4969f148ba")) //this will give the matched document
+    .then((res) => {
+        console.log(res);
+    }).catch((e) => {
         console.log(e);
     })
 
