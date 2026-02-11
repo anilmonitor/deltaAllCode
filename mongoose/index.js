@@ -84,10 +84,10 @@ User.find({})
 //lets apply some condition
 User.find({ age: { $gt: 20 } })
     .then((res) => {
-        console.log(`His age is ${res[5].age} `); //we want age 
+        console.log(`His age is ${res[5].age} `); //we want age
     })
     .catch((e) => {
-        console.log(e); 
+        console.log(e);
     })
 
 */
@@ -112,20 +112,37 @@ User.findById(("698b8f17e1a77d4969f148ba")) //this will give the matched documen
         console.log(e);
     }) */
 
-        /*
+/*
 //Model.updateOne()
 User.updateOne({ age: { $lt: 20 } }, { age: 100 }) //jiska age 20 se kam h usko update kr do
+.then((res) => {
+console.log(res);
+}).catch((e) => {
+console.log(e);
+}) */
+
+/*
+//Model.updateMany()
+User.updateMany({age: {$eq: 22}} ,{age: 522})
+.then((res)=>{
+console.log(res);
+})
+.catch((e)=> {
+console.log(e);
+})
+*/
+
+// User.updateOne({_id: "698cdfe02b974eaabf3a5865"}, {age: 72})
+// .then((res)=>{
+//     console.log(res);
+// }) .catch((e)=>{
+//     console.log(e)
+// })
+
+//To display the actual update
+User.findOneAndUpdate({ age: 72 }, { name: "Sharma JI" }, { new: true })
     .then((res) => {
         console.log(res);
     }).catch((e) => {
         console.log(e);
-    }) */
-
-//Model.updateMany()
-User.updateMany({age: {$eq: 22}} ,{age: 522})
-.then((res)=>{
-    console.log(res);
-})
-.catch((e)=> {
-    console.log(e);
-})
+    })
