@@ -150,7 +150,7 @@ User.findOneAndUpdate({ age: 72 }, { name: "Sharma JI" }, { new: true })
 
 */
 
-
+/*
 //Model.findByIdAndUpdate()
 User.findByIdAndUpdate(("698cdfe02b974eaabf3a5865"), { name: "Adiya bhai" }, {new:true})
     .then((res) => {
@@ -158,4 +158,13 @@ User.findByIdAndUpdate(("698cdfe02b974eaabf3a5865"), { name: "Adiya bhai" }, {ne
     }).catch((e) => {
         console.log(e);
     })
+*/
+//delete from database
+// i. Model.deleteOne()
+// ii.  Model.deleteMany()
+// iii.  Model.findByIdAndDelete()
+// iv. Model.findOneAndDelete()
+
+
+
 
