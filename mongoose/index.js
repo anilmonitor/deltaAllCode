@@ -112,11 +112,20 @@ User.findById(("698b8f17e1a77d4969f148ba")) //this will give the matched documen
         console.log(e);
     }) */
 
+        /*
 //Model.updateOne()
 User.updateOne({ age: { $lt: 20 } }, { age: 100 }) //jiska age 20 se kam h usko update kr do
     .then((res) => {
         console.log(res);
     }).catch((e) => {
         console.log(e);
-    })
+    }) */
 
+//Model.updateMany()
+User.updateMany({age: {$eq: 22}} ,{age: 522})
+.then((res)=>{
+    console.log(res);
+})
+.catch((e)=> {
+    console.log(e);
+})
