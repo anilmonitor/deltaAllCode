@@ -69,7 +69,7 @@ User.insertMany([
  */
 
 // Find()
-
+/*
 User.find({})
     .then((res) => {
         console.log(res); //print all the documents
@@ -78,8 +78,17 @@ User.find({})
     .catch((e) => {
 
         console.log(e);
-    })
+    }) */
 
+
+//lets apply some condition
+User.find({ age: { $gt: 30 } })
+    .then((res) => {
+        console.log(`His age is ${res[0].age} `); //we want age 
+    })
+    .catch((e) => {
+        console.log(e);
+    })
 
 
 
