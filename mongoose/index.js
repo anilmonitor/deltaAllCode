@@ -139,6 +139,7 @@ console.log(e);
 //     console.log(e)
 // })
 
+/*
 //To display the actual update
 User.findOneAndUpdate({ age: 72 }, { name: "Sharma JI" }, { new: true })
     .then((res) => {
@@ -146,3 +147,15 @@ User.findOneAndUpdate({ age: 72 }, { name: "Sharma JI" }, { new: true })
     }).catch((e) => {
         console.log(e);
     })
+
+*/
+
+
+//Model.findByIdAndUpdate()
+User.findByIdAndUpdate(("698cdfe02b974eaabf3a5865"), { name: "Adiya bhai" }, {new:true})
+    .then((res) => {
+        console.log(res);
+    }).catch((e) => {
+        console.log(e);
+    })
+
