@@ -165,6 +165,9 @@ User.findByIdAndUpdate(("698cdfe02b974eaabf3a5865"), { name: "Adiya bhai" }, {ne
 // iii.  Model.findByIdAndDelete()
 // iv. Model.findOneAndDelete()
 
-
-
+// i. Model.deleteOne()
+User.deleteOne({ name: "Sonali Kumari" })
+    .then((res) => {
+        console.log(res);
+    })
 
