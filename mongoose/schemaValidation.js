@@ -22,7 +22,19 @@ const Valid = new mongoose.Schema({
 //Model
 const Val = new mongoose.model("Val", Valid);
 
-const newVal = new Val({ name: "Anil", gender: "Female", age: 22 });
-newVal.save().then((res) => {
+// const newVal = new Val({ name: "Sonali Kumar", gender: "Female", age: 20 });
+// newVal.save().then((res) => {
+//     console.log(res);
+// });
+
+
+// Val.findOne({name: "Ritu Kumar"}).then((res)=>{
+//     console.log(res);
+// })
+
+
+Val.findOneAndUpdate({ name: "Ritu Kumar" }, { name: "Ritu Kumari" }, { new: true }).then((res) => {
     console.log(res);
-});
+})
+// "Ritu Kumar"
+
