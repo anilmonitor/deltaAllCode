@@ -27,14 +27,4 @@ const Val = new mongoose.model("Val", Valid);
 //     console.log(res);
 // });
 
-
-// Val.findOne({name: "Ritu Kumar"}).then((res)=>{
-//     console.log(res);
-// })
-
-
-Val.findOneAndUpdate({ name: "Ritu Kumar" }, { name: "Ritu Kumari" }, { new: true }).then((res) => {
-    console.log(res);
-})
-// "Ritu Kumar"
-
+// Schema Validation 
