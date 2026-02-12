@@ -9,22 +9,36 @@ main()
     });
 
 async function main() {
-    await mongoose.connect("mongodb://127.0.0.1:27017/test");
+    await mongoose.connect("mongodb://127.0.0.1:27017/Amazon");
 }
 
 // schema
-const Valid = new mongoose.Schema({
-    name: String,
-    gender: String,
-    age: Number,
+const bookSchema = new mongoose.Schema({
+    title: {
+        type: String,
+        required: true,
+    },
+    auther: {
+        type: String,
+    },
+    price: {
+        type: Number
+    }
 });
 
 //Model
-const Val = new mongoose.model("Val", Valid);
+const Book = new mongoose.model("Book", bookSchema);
 
-// const newVal = new Val({ name: "Sonali Kumar", gender: "Female", age: 20 });
-// newVal.save().then((res) => {
-//     console.log(res);
-// });
 
-// Schema Validation 
+const Book1 = new Book({
+
+    title: "Amazon book pvt",
+    auther: "RS Agraval",
+    price: 3233,
+})
+
+Book1.save().then((res) => {
+    console.log(res);
+}).catch((e) => {
+    console.log(e);
+})
