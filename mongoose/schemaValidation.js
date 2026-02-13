@@ -28,9 +28,16 @@ const bookSchema = new mongoose.Schema(
         },
         price: {
             type: Number,
+            default: 5,
         },
+        cat: {
+            type: String,
+            enum: ["redColor", "blueColor"],
+        },
+        list: [String],
     },
     { timestamps: true },
+
 );
 
 //Model
@@ -39,7 +46,8 @@ const Book = new mongoose.model("Book", bookSchema);
 const Book1 = new Book({
     title: "mon",
     auther: "AnilK",
-    price: 3233,
+    cat: "redColor",
+    list: ["Anil", "Rahul", "Manjeet"],
 });
 
 Book1.save()
