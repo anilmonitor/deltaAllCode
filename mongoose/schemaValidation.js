@@ -28,7 +28,8 @@ const bookSchema = new mongoose.Schema(
         },
         price: {
             type: Number,
-            default: 5,
+            // default: 5,
+            enum: [500, 1000],
         },
         cat: {
             type: String,
@@ -48,6 +49,7 @@ const Book1 = new Book({
     auther: "AnilK",
     cat: "redColor",
     list: ["Anil", "Rahul", "Manjeet"],
+    price: 1000,
 });
 
 Book1.save()
