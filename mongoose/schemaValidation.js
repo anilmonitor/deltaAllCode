@@ -17,9 +17,11 @@ const bookSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
+        lowercase: true,
     },
     auther: {
         type: String,
+        uppercase: true,
     },
     price: {
         type: Number
@@ -32,8 +34,8 @@ const Book = new mongoose.model("Book", bookSchema);
 
 const Book1 = new Book({
 
-    title: "Amazon book pvt",
-    auther: "RS Agraval",
+    title: "moNitor booK servicE",
+    auther: "Anil Kumar",
     price: 3233,
 })
 
