@@ -13,27 +13,28 @@ async function main() {
 }
 
 // schema
-const bookSchema = new mongoose.Schema({
-    title: {
-        type: String,
-        required: true,
-        lowercase: true,
-        minlength: 3,
+const bookSchema = new mongoose.Schema(
+    {
+        title: {
+            type: String,
+            required: true,
+            lowercase: true,
+            minlength: 3,
+        },
+        auther: {
+            type: String,
+            uppercase: true,
+            maxlength: 5,
+        },
+        price: {
+            type: Number,
+        },
     },
-    auther: {
-        type: String,
-        uppercase: true,
-        maxlength: 5,
-        lastActiveAt: Date,
-    },
-    price: {
-        type: Number
-    }
-});
+    { timestamps: true },
+);
 
 //Model
 const Book = new mongoose.model("Book", bookSchema);
-
 
 const Book1 = new Book({
     title: "mon",
@@ -41,10 +42,10 @@ const Book1 = new Book({
     price: 3233,
 });
 
-
-
-Book1.save().then((res) => {
-    console.log(res);
-}).catch((e) => {
-    console.log(e);
-})
+Book1.save()
+    .then((res) => {
+        console.log(res);
+    })
+    .catch((e) => {
+        console.log(e);
+    });
