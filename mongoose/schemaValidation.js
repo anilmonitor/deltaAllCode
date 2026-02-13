@@ -19,7 +19,7 @@ const bookSchema = new mongoose.Schema(
             type: String,
             required: true,
             lowercase: true,
-            minlength: 3,
+            minlength: [3, "Length is less than 3! Please Enter greater"], //custom error
         },
         auther: {
             type: String,
@@ -61,9 +61,9 @@ const Book1 = new Book({
 //     });
 
 
-Book.findByIdAndUpdate(("698f1495249db64f6aa859b1"), { title: "lm" }, { runValidators: true })
+Book.findByIdAndUpdate(("698f1495249db64f6aa859b1"), { title: "oo" }, { runValidators: true })
     .then((res) => {
         console.log(res);
     }).catch((e) => {
-        console.log(e);
+        console.log(e.errors.title.properties.message); //filtering exact error
     })
