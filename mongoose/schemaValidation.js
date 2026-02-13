@@ -52,10 +52,18 @@ const Book1 = new Book({
     price: 1000,
 });
 
-Book1.save()
+// Book1.save()
+//     .then((res) => {
+//         console.log(res);
+//     })
+//     .catch((e) => {
+//         console.log(e);
+//     });
+
+
+Book.findByIdAndUpdate(("698f1495249db64f6aa859b1"), { title: "lm" }, { runValidators: true })
     .then((res) => {
         console.log(res);
-    })
-    .catch((e) => {
+    }).catch((e) => {
         console.log(e);
-    });
+    })
