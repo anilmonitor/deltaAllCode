@@ -18,10 +18,13 @@ const bookSchema = new mongoose.Schema({
         type: String,
         required: true,
         lowercase: true,
+        minlength: 3,
     },
     auther: {
         type: String,
         uppercase: true,
+        maxlength: 5,
+        lastActiveAt: Date,
     },
     price: {
         type: Number
@@ -33,11 +36,12 @@ const Book = new mongoose.model("Book", bookSchema);
 
 
 const Book1 = new Book({
-
-    title: "moNitor booK servicE",
-    auther: "Anil Kumar",
+    title: "mon",
+    auther: "AnilK",
     price: 3233,
-})
+});
+
+
 
 Book1.save().then((res) => {
     console.log(res);
